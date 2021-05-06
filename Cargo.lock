@@ -17,7 +17,7 @@ name = "actor_interface"
 version = "0.1.0"
 dependencies = [
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_actor 0.1.7",
  "forest_actor 1.0.4",
  "forest_actor 2.0.1",
@@ -1057,7 +1057,7 @@ dependencies = [
  "byteorder 1.4.2",
  "crossbeam",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_blocks",
@@ -1098,7 +1098,7 @@ dependencies = [
  "chain",
  "commcid",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_blocks",
@@ -1254,7 +1254,7 @@ dependencies = [
  "chain",
  "chain_sync",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "flate2",
  "forest_address",
  "forest_bigint",
@@ -1943,6 +1943,28 @@ dependencies = [
 
 [[package]]
 name = "fil_types"
+version = "0.1.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "529404fce0ceab0c5a10a0503bb0cacc40bbd58cc1b4532cb62db455d184f620"
+dependencies = [
+ "async-std",
+ "chrono",
+ "fil_clock",
+ "forest_address",
+ "forest_bigint",
+ "forest_cid",
+ "forest_encoding",
+ "forest_vm",
+ "git-version",
+ "lazy_static",
+ "num-derive",
+ "num-traits",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "fil_types"
 version = "0.2.0"
 dependencies = [
  "async-std",
@@ -2099,7 +2121,7 @@ dependencies = [
  "chain",
  "chain_sync",
  "ctrlc",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_blocks",
@@ -2144,7 +2166,7 @@ dependencies = [
  "byteorder 1.4.2",
  "commcid",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_bitfield",
@@ -2178,7 +2200,7 @@ dependencies = [
  "byteorder 1.4.2",
  "commcid",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_bitfield",
@@ -2212,7 +2234,7 @@ dependencies = [
  "byteorder 1.4.2",
  "commcid",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_bitfield",
@@ -2245,7 +2267,7 @@ dependencies = [
  "commcid",
  "derive_builder",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_bitfield",
@@ -2321,7 +2343,7 @@ dependencies = [
  "byteorder 1.4.2",
  "derive_builder",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_cid",
@@ -2490,7 +2512,7 @@ version = "0.7.2"
 dependencies = [
  "base64 0.13.0",
  "derive_builder",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_cid",
@@ -2510,7 +2532,7 @@ dependencies = [
  "base64 0.13.0",
  "commcid",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "filecoin-proofs-api",
  "forest_address",
  "forest_cid",
@@ -2596,9 +2618,9 @@ checksum = "3dcaa9ae7725d12cdb85b3ad99a434db70b468c09ded17e012d86b5c1010f7a7"
 
 [[package]]
 name = "futures"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "309f13e3f4be6d5917178c84db67c0b9a09177ac16d4f9a7313a767a68adaa77"
+checksum = "a9d5813545e459ad3ca1bff9915e9ad7f1a47dc6a91b627ce321d5863b7dd253"
 dependencies = [
  "futures-channel",
  "futures-core",
@@ -2611,9 +2633,9 @@ dependencies = [
 
 [[package]]
 name = "futures-channel"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7a3b03bd32f6ec7885edeb99acd1e47e20e34fd4dfd3c6deed6fcac8a9d28f6a"
+checksum = "ce79c6a52a299137a6013061e0cf0e688fce5d7f1bc60125f520912fdb29ec25"
 dependencies = [
  "futures-core",
  "futures-sink",
@@ -2621,15 +2643,15 @@ dependencies = [
 
 [[package]]
 name = "futures-core"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed8aeae2b6ab243ebabe6f54cd4cf53054d98883d5d326128af7d57a9ca5cd3d"
+checksum = "098cd1c6dda6ca01650f1a37a794245eb73181d0d4d4e955e2f3c37db7af1815"
 
 [[package]]
 name = "futures-executor"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3f7836b36b7533d16fd5937311d98ba8965ab81030de8b0024c299dd5d51fb9b"
+checksum = "10f6cb7042eda00f0049b1d2080aa4b93442997ee507eb3828e8bd7577f94c9d"
 dependencies = [
  "futures-core",
  "futures-task",
@@ -2639,9 +2661,9 @@ dependencies = [
 
 [[package]]
 name = "futures-io"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d41234e71d5e8ca73d01563974ef6f50e516d71e18f1a2f1184742e31f5d469f"
+checksum = "365a1a1fb30ea1c03a830fdb2158f5236833ac81fa0ad12fe35b29cddc35cb04"
 
 [[package]]
 name = "futures-lite"
@@ -2660,9 +2682,9 @@ dependencies = [
 
 [[package]]
 name = "futures-macro"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3520e0eb4e704e88d771b92d51273ee212997f0d8282f17f5d8ff1cb39104e42"
+checksum = "668c6733a182cd7deb4f1de7ba3bf2120823835b3bcfbeacf7d2c4a773c1bb8b"
 dependencies = [
  "proc-macro-hack",
  "proc-macro2 1.0.24",
@@ -2683,18 +2705,15 @@ dependencies = [
 
 [[package]]
 name = "futures-sink"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c72d188479368953c6c8c7140e40d7a4401674ab3b98a41e60e515d6cbdbe5de"
+checksum = "5c5629433c555de3d82861a7a4e3794a4c40040390907cfbfd7143a92a426c23"
 
 [[package]]
 name = "futures-task"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "08944cea9021170d383287169859c0ca8147d9ec285978393109954448f33cc7"
-dependencies = [
- "once_cell",
-]
+checksum = "ba7aa51095076f3ba6d9a1f702f74bd05ec65f555d70d2033d55ba8d69f581bc"
 
 [[package]]
 name = "futures-timer"
@@ -2704,9 +2723,9 @@ checksum = "e64b03909df88034c26dc1547e8970b91f98bdb65165d6a4e9110d94263dbb2c"
 
 [[package]]
 name = "futures-util"
-version = "0.3.10"
+version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d3dd206efbe2ca683b2ce138ccdf61e1b0a63f5816dcedc9d8654c500ba0cea6"
+checksum = "3c144ad54d60f23927f0a6b6d816e4271278b64f005ad65e4e35291d2de9c025"
 dependencies = [
  "futures-channel",
  "futures-core",
@@ -2790,7 +2809,7 @@ version = "0.1.0"
 dependencies = [
  "async-std",
  "chain",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_blocks",
  "forest_car",
  "forest_cid",
@@ -3261,7 +3280,7 @@ dependencies = [
  "ahash 0.6.2",
  "byteorder 1.4.2",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_blocks",
@@ -4257,7 +4276,7 @@ dependencies = [
  "async-trait",
  "blake2b_simd",
  "chain",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_blocks",
@@ -4511,7 +4530,7 @@ version = "0.1.0"
 dependencies = [
  "beacon",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "lazy_static",
  "serde_json",
 ]
@@ -4785,7 +4804,7 @@ version = "0.1.0"
 dependencies = [
  "async-std",
  "blake2b_simd",
- "fil_types",
+ "fil_types 0.2.0",
  "futures",
  "isahc",
  "log",
@@ -5578,7 +5597,7 @@ dependencies = [
  "crossbeam",
  "extensions",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_bitfield",
@@ -5886,7 +5905,7 @@ version = "0.1.0"
 dependencies = [
  "base64 0.13.0",
  "bls-signatures",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_blocks",
  "forest_cid",
@@ -6196,7 +6215,7 @@ dependencies = [
  "beacon",
  "chain",
  "fil_clock",
- "fil_types",
+ "fil_types 0.2.0",
  "filecoin-proofs-api",
  "forest_address",
  "forest_bigint",
@@ -6226,11 +6245,35 @@ dependencies = [
 ]
 
 [[package]]
+name = "state_migration"
+version = "0.1.0"
+dependencies = [
+ "fil_clock",
+ "fil_types 0.1.11",
+ "forest_actor 0.1.7",
+ "forest_actor 1.0.4",
+ "forest_actor 3.0.0",
+ "forest_address",
+ "forest_bigint",
+ "forest_bitfield",
+ "forest_cid",
+ "forest_encoding",
+ "forest_hash_utils",
+ "forest_json_utils",
+ "forest_vm",
+ "futures",
+ "ipld_blockstore",
+ "libp2p 0.35.1",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
 name = "state_tree"
 version = "0.1.0"
 dependencies = [
  "actor_interface",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_bigint",
  "forest_cid",
@@ -6247,7 +6290,7 @@ version = "0.1.0"
 dependencies = [
  "colored",
  "difference",
- "fil_types",
+ "fil_types 0.2.0",
  "forest_address",
  "forest_cid",
  "forest_ipld",
